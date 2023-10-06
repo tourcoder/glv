@@ -49,7 +49,7 @@ export_path_to_current_shell() {
   else
     echo -e "${EXPORTSCRIPT}"
   fi
-  echo "Done, append the following to your shell profile\\nexport PATH=\$PATH:/usr/local/go/bin" && exit 1
+  echo "Done, please append the following to your shell profile \\n export PATH=\$PATH:/usr/local/go/bin \\n And it is recommended to close and reopen the terminal." && exit 1
 }
 
 opt_golang(){
@@ -117,7 +117,7 @@ set_gomodcache() {
 }
 
 glv_version() {
-  echo "v0.1.5"
+  echo "v0.1.6"
 }
 
 glv_remote_version() {
